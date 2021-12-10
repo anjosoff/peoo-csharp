@@ -2,15 +2,13 @@ using System;
 class MainClass{
   public static void Main(string[] args){
     Retangulo x = new Retangulo();
-
     Console.WriteLine("Entre com o valor da Altura:");
     x.SetAltura(double.Parse(Console.ReadLine()));
     Console.WriteLine("Entre com o valor da Base:");
     x.SetBase(double.Parse(Console.ReadLine()));
     Console.WriteLine(x.ToString());
     Console.WriteLine($"Área:"+x.CalcArea());
-    Console.WriteLine($"Diagonal:"+x.CalcDiagonal());
-    
+    Console.WriteLine($"Diagonal:"+x.CalcDiagonal());    
   }
 }
 class Retangulo {
@@ -43,5 +41,5 @@ class Retangulo {
   }
   public override string ToString() {
     return $"Base = {b}, Altura = {h}";
-}
+  }
 }
