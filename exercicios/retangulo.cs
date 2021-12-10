@@ -2,8 +2,11 @@ using System;
 class MainClass{
   public static void Main(string[] args){
     Retangulo x = new Retangulo();
-    x.SetAltura(12);
-    x.SetBase(9);
+
+    Console.WriteLine("Entre com o valor da Altura:");
+    x.SetAltura(double.Parse(Console.ReadLine()));
+    Console.WriteLine("Entre com o valor da Base:");
+    x.SetBase(double.Parse(Console.ReadLine()));
     Console.WriteLine(x.ToString());
     Console.WriteLine($"Área:"+x.CalcArea());
     Console.WriteLine($"Diagonal:"+x.CalcDiagonal());
