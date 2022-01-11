@@ -10,7 +10,7 @@ class Program {
     total.SetNumAndares(andares);
     total.SetNumAptosAndar(aptos);
     foreach(int i in total.GetNumeros()){
-      Console.WriteLine(i);
+      Console.WriteLine($"Apartamento {i}  ");
     }
   }
 }
