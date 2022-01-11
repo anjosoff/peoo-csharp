@@ -10,7 +10,7 @@ class Program {
       string nome = Console.ReadLine();
       Console.Write($"Informe a população do {i+1}° país: ");
       int pessoas = int.Parse(Console.ReadLine());
-      Console.Write($"Informe a área geográfica do {i+1}° país: ");
+      Console.Write($"Informe a área geográfica do {i+1}° país em km²: ");
       int area = int.Parse(Console.ReadLine());
       Pais novo = new Pais(nome, pessoas, area);
       lista[i] = novo;
@@ -27,12 +27,12 @@ class Program {
     }
     Console.WriteLine("Resultados");
     Console.WriteLine($"Mais populoso: {lista[maior_pop]} - {lista[maior_pop].GetPop()} habitantes");
-    Console.WriteLine($"Maior área: {lista[maior_area]} - {lista[maior_area].GetArea()} km2");
+    Console.WriteLine($"Maior área: {lista[maior_area]} - {lista[maior_area].GetArea()} km²");
   }
 }
 class Pais{
   private string nome;
-  private int popu;
+  private int pop;
   private int area;
   public Pais(string nome, int pop, int area){
     this.nome = nome; 
