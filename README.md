@@ -1,3 +1,3 @@
-# building
+# 📁 Repositório de **Programação Estruturada e Orientada a Objeto** 
 
-> Repositório de atividades de PEOO com C# nas aulas ministradas por Gilbert no IFRN.
+> Gilbert Azevedo da Silva
